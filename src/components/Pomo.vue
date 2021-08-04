@@ -67,7 +67,8 @@ export default {
         },
 
         start() {
-        this.timer = setInterval(() =>{
+            this.pause()
+            this.timer = setInterval(() =>{
              this.totalSeconds -= 1
             },1000)
         },
