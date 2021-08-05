@@ -1,6 +1,6 @@
 <template>
     <v-card class="mt-8">
-        <v-tabs v-model="timerType" grow>
+        <v-tabs @change = "changeTabs" v-model="currentTimer" grow>
             <v-tab v-for="tab in tabTitles" :key="tab">
                 {{ tab }}
             </v-tab>
@@ -23,7 +23,7 @@
                 <v-icon>mdi-stop-circle-outline</v-icon>
                 Pause
                 </v-btn>
-            <v-btn left @click="reset">
+            <v-btn left @click="reset" :disabled="isRunning">
                 <v-icon>mdi-restart</v-icon>
                 Reset
                 </v-btn>
@@ -42,7 +42,23 @@ export default {
             timer : null,
             totalSeconds: 25 * 60,
             timerType: 0,
-            tabTitles: ['Pomodoro','ShortBreak','LongBreak']
+            currentTimer: 0,
+            timers:  [
+                {
+                    name: 'Pomodoro',
+                    minutes: 25
+                },
+                {
+                    name: 'shortBreak',
+                    minutes: 5
+                },
+                {
+                    name: 'longBreak',
+                    minutes:10
+                }
+
+                ],
+            isRunning :false
         }
     },
 
@@ -68,18 +84,23 @@ export default {
 
         start() {
             this.pause()
+            this.isRunning= true
             this.timer = setInterval(() =>{
              this.totalSeconds -= 1
             },1000)
         },
 
         pause(){
+            this.isRunning= false,
             clearInterval(this.timer)
         },
 
         reset(){
             this.pause,
             this.totalSeconds = 25 * 60
+        },
+        changeTabs (){
+
         }
     }
 }
