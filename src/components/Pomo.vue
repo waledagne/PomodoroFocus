@@ -82,6 +82,10 @@ export default {
             this.pause()
             this.isRunning= true
             this.timer = setInterval(() =>{
+                if(this.totalSeconds <= 0){
+                    this.pause()
+                    return
+                }
              this.totalSeconds -= 1
             },1000)
         },
