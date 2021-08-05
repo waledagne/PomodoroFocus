@@ -1,12 +1,11 @@
 <template>
     <v-card class="mt-8">
-        <v-tabs @change = "changeTabs" v-model="currentTimer" grow>
-            <v-tab v-for="tab in tabTitles" :key="tab">
-                {{ tab }}
+        <v-tabs @change = "changeTimerTabs" v-model="currentTimer" grow>
+            <v-tab v-for="timer in timers" :key="timer.name">
+                {{ timer.name }}
             </v-tab>
-           <v-tabs-items v-model="timerType">
-      <v-tab-item>
-        <v-card
+                 </v-tabs>
+            <v-card
           color="basil"
           class="pa-6
           d-flex flex-column justify-center align-center"
@@ -23,15 +22,12 @@
                 <v-icon>mdi-stop-circle-outline</v-icon>
                 Pause
                 </v-btn>
-            <v-btn left @click="reset" :disabled="isRunning">
+            <v-btn left @click="reset(timers[currentTimer].minutes)" :disabled="isRunning">
                 <v-icon>mdi-restart</v-icon>
                 Reset
                 </v-btn>
        </div>
         </v-card>
-      </v-tab-item>
-    </v-tabs-items>
-        </v-tabs>
     </v-card>
 </template>
 
@@ -95,11 +91,13 @@ export default {
             clearInterval(this.timer)
         },
 
-        reset(){
+        reset(minutes){
             this.pause,
-            this.totalSeconds = 25 * 60
+            this.totalSeconds = minutes * 60
         },
-        changeTabs (){
+        changeTimerTabs (num){
+            this.currentTimer = num
+            this.reset(this.timers[num].minutes)
 
         }
     }
