@@ -1,4 +1,19 @@
 <template>
+<div>
+     <Settings :dialog="dialog" />
+<v-app-bar
+      dark
+      width="700px"
+    >
+      <v-toolbar-title>Pomodoro Clock</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn icon>
+          Settings
+        <v-icon>mdi-setting</v-icon>
+      </v-btn>
+      </v-app-bar>
     <v-card class="mt-8">
         <v-tabs @change = "changeTimerTabs" v-model="currentTimer" grow>
             <v-tab v-for="timer in timers" :key="timer.name">
@@ -28,11 +43,19 @@
                 </v-btn>
        </div>
         </v-card>
+        <Settings :dialog="dialog" />
     </v-card>
+    </div>
 </template>
 
 <script>
+import Settings from './Settings.vue'
 export default {
+
+    components : {
+        Settings,
+    },
+
     data() {
         return {
             timer : null,
@@ -54,8 +77,8 @@ export default {
                 }
 
                 ],
-            isRunning :false
-        }
+            isRunning :false,
+        }   // dialog: false
     },
 
     computed: {
