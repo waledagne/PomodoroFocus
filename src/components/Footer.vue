@@ -1,15 +1,15 @@
 <template>
   <footer>
     <p>&copy; PomoClock</p>
-    <div class="socials-wrap">
+     <div class="socials-wrap">
       <a href="https://twitter.com/demakese" target="_blank" class="social"
         ><span class="fa fa-twitter"></span
       ></a>
-      <a href="https://www.instagram.com/wale_dagne_" target="_blank" class="social"
+      <a href="https://www.instagram.com/wale_dagne" target="_blank" class="social"
         ><span class="fa fa-instagram"></span
       ></a>
       <a
-        href="https://www.linkedin.com/in/walelgnDagne/"
+        href="https://www.linkedin.com/in/walelgn-dagne/"
         target="_blank"
         class="social"
         ><span class="fa fa-linkedin"></span
@@ -19,9 +19,10 @@
     </div>
   </footer>
 </template>
+
 <style scoped>
 footer {
-  background-image: linear-gradient(to right, #130f40, '#db524d7');
+ background-image: linear-gradient(to left, #130f40, '#db524d7');
   width: 100%;
   height: 7vh;
   position: fixed;
