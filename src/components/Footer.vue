@@ -14,8 +14,6 @@
         class="social"
         ><span class="fa fa-linkedin"></span
       ></a>
-
-      <!-- <span class="social fas fa-"></span> -->
     </div>
   </footer>
 </template>

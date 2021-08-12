@@ -30,6 +30,6 @@ components: {
 };
 </script>
 
-
 <style>
+
 </style>
