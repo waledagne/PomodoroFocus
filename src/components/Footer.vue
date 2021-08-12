@@ -1,0 +1,60 @@
+<template>
+  <footer>
+    <p>&copy; PomoClock</p>
+    <div class="socials-wrap">
+      <a href="https://twitter.com/demakese" target="_blank" class="social"
+        ><span class="fa fa-twitter"></span
+      ></a>
+      <a href="https://www.instagram.com/wale_dagne_" target="_blank" class="social"
+        ><span class="fa fa-instagram"></span
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/walelgnDagne/"
+        target="_blank"
+        class="social"
+        ><span class="fa fa-linkedin"></span
+      ></a>
+
+      <!-- <span class="social fas fa-"></span> -->
+    </div>
+  </footer>
+</template>
+<style scoped>
+footer {
+  background-image: linear-gradient(to right, #130f40, '#db524d7');
+  width: 100%;
+  height: 7vh;
+  position: fixed;
+  top: 93vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.socials-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  font-size: 1.25rem;
+  /* padding: 0.25rem 0.5rem; */
+  margin: 0 1rem;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.63);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.social:hover {
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+</style>
