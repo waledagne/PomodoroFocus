@@ -3,15 +3,15 @@
     <p>&copy; PomoClock</p>
      <div class="social-wrap">
       <a href="https://twitter.com/demakese" target="_blank" class="social"
-        ><v-icon>mdi-twitter</v-icon>
+        ><v-icon color="blue">mdi-twitter</v-icon>
       </a>
       <a href="https://www.instagram.com/wale_dagne" target="_blank" class="social"
-        ><v-icon>mdi-instagram</v-icon></a>
+        ><v-icon color="#c1558b">mdi-instagram</v-icon></a>
       <a
         href="https://www.linkedin.com/in/walelgn-dagne/"
         target="_blank"
         class="social"
-        ><v-icon>mdi-linkedin</v-icon>
+        ><v-icon color="#006192">mdi-linkedin</v-icon>
       </a>
     </div>
   </v-footer>
@@ -21,7 +21,7 @@
 footer {
 
   width: 100%;
-  height: 7vh;
+  height: 8vh;
   position: fixed;
   background-image: linear-gradient(to left, #130f40, #db524d);
   top: 93vh;
