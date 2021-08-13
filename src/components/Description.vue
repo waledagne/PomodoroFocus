@@ -120,12 +120,6 @@ body {
   position: relative;
 }
 
-input:focus,
-button:focus,
-textarea:focus {
-  outline: none;
-}
-
 h1,
 h2 {
   margin-top: 34px;

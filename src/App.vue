@@ -9,8 +9,8 @@
         </v-col>
       </v-row>
       </v-container>
-        <Footer />
    </v-content>
+    <Footer />
  </v-app>
 </template>
 
