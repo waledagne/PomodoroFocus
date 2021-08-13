@@ -1,29 +1,29 @@
 <template>
-  <footer>
+  <v-footer class="footer">
     <p>&copy; PomoClock</p>
-     <div class="socials-wrap">
+     <div class="social-wrap">
       <a href="https://twitter.com/demakese" target="_blank" class="social"
-        ><span class="fa fa-twitter"></span
-      ></a>
+        ><v-icon>mdi-twitter</v-icon>
+      </a>
       <a href="https://www.instagram.com/wale_dagne" target="_blank" class="social"
-        ><span class="fa fa-instagram"></span
-      ></a>
+        ><v-icon>mdi-instagram</v-icon></a>
       <a
         href="https://www.linkedin.com/in/walelgn-dagne/"
         target="_blank"
         class="social"
-        ><span class="fa fa-linkedin"></span
-      ></a>
+        ><v-icon>mdi-linkedin</v-icon>
+      </a>
     </div>
-  </footer>
+  </v-footer>
 </template>
 
 <style scoped>
 footer {
- background-image: linear-gradient(to left, #130f40, '#db524d7');
+
   width: 100%;
   height: 7vh;
   position: fixed;
+  background-image: linear-gradient(to left, #130f40, #db524d);
   top: 93vh;
   display: flex;
   justify-content: space-between;
@@ -31,7 +31,7 @@ footer {
   padding: 0 1rem;
 }
 
-.socials-wrap {
+.social-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@ footer {
 
 .social {
   font-size: 1.25rem;
-  /* padding: 0.25rem 0.5rem; */
+  padding: 0.25rem 0.5rem;
   margin: 0 1rem;
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.63);

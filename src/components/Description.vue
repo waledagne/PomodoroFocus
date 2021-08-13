@@ -49,12 +49,6 @@
           How to use the Pomodoro Timer?
         </h2>
         <ol class="features__list-ol">
-          <li><strong>Add tasks</strong> to work on today</li>
-          <li>
-            <strong>Set estimate pomodoros</strong> (1 = 25min of
-            work) for each tasks
-          </li>
-          <li><strong>Select a task</strong> to work on</li>
           <li>
             <strong>Start timer</strong> and focus on the task for 25
             minutes
@@ -69,7 +63,7 @@
         </ol>
       </div>
 
-      <div class="features container">
+      <!-- <div class="features container">
         <h2 class="catchcopy__header">Features</h2>
         <ul class="features__list">
           <li>
@@ -89,7 +83,7 @@
             preference
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
 </template>
 

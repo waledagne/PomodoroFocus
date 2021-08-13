@@ -2,8 +2,8 @@
 <div>
      <Settings :dialog="dialog" />
     <v-card  class="mt-8">
-        <v-tabs @change = "changeTimerTabs" v-model="currentTimer" grow >
-            <v-tab v-for="timer in timers" :key="timer.name">
+        <v-tabs  @change = "changeTimerTabs" v-model="currentTimer" grow >
+            <v-tab  v-for="timer in timers" :key="timer.name">
                 {{ timer.name }}
             </v-tab>
                  </v-tabs>
@@ -11,7 +11,6 @@
            class="pa-6
           d-flex flex-column justify-center align-center"
           flat>
-
             <h1 class="time">{{displayMinutes}}:{{displaySeconds}}</h1>
 
         <div class="button-group">
