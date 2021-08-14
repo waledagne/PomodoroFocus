@@ -1,14 +1,14 @@
 <template>
 <div>
-     <Settings :dialog="dialog" />
-    <v-card  class="mt-7">
+
+    <v-card  class="mt-8">
         <v-tabs  @change = "changeTimerTabs" v-model="currentTimer" grow >
             <v-tab  v-for="timer in timers" :key="timer.name">
                 {{ timer.name }}
             </v-tab>
                  </v-tabs>
             <v-card
-           class="pa-6
+           class="pa-5
           d-flex flex-column justify-center align-center"
           flat>
             <h1 class="time">{{displayMinutes}}:{{displaySeconds}}</h1>
@@ -28,7 +28,7 @@
                 </v-btn>
        </div>
         </v-card>
-        <!-- <Settings :dialog="dialog" /> -->
+        <Settings :dialog="dialog" />
     </v-card>
         <Description />
     </div>
@@ -38,7 +38,12 @@
 import Settings from './Settings.vue'
 import Description from './Description.vue'
 export default {
-
+ props: {
+        dialog: {
+            type: Boolean,
+            requied: true
+        }
+    },
     components : {
         Settings,
         Description,
@@ -120,6 +125,16 @@ export default {
 </script>
 
  <style scoped>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Montserrat", sans-serif; */
+  -webkit-tap-highlight-color: transparent;
+}
+ .v-card{
+     width:600px;
+ }
  .time{
      text-align: center;
      font-weight: 300;
