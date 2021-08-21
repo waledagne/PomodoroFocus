@@ -71,7 +71,7 @@ export default {
 
                 ],
             isRunning :false,
-        }   // dialog: false
+        }
     },
 
     computed: {
