@@ -1,17 +1,6 @@
 <template>
  <v-app>
-    <nav>
-      <router-link to="/" class="logo"
-        ><span>PomoClock</span>
-        </router-link>
-         <ul>
-        <li >
-          <v-btn color="#db524d" @click="dialog=true">
-    <v-icon>mdi-cog-outline</v-icon>
-          </v-btn>
-        </li>
-      </ul>
-    </nav>
+   <Nav />
   <v-content>
     <v-container>
       <v-row>
@@ -27,13 +16,14 @@
 
 <script>
 import Pomo from "./components/Pomo.vue";
-//import Nav from "./components/Nav.vue"
+import Nav from "./components/Nav.vue"
 import Footer from "./components/Footer.vue";
 
 export default {
   name: 'App',
 
 components: {
+  Nav,
   Pomo,
   Footer,
 },
