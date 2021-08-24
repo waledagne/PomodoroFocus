@@ -1,6 +1,5 @@
 <template>
 <div>
-
     <v-card  class="mt-8">
         <v-tabs  @change = "changeTimerTabs" v-model="currentTimer" grow >
             <v-tab  v-for="timer in timers" :key="timer.name">
@@ -68,7 +67,6 @@ export default {
                     name: 'longBreak',
                     minutes:10
                 }
-
                 ],
             isRunning :false,
         }

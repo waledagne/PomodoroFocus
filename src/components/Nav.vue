@@ -1,14 +1,23 @@
 <template>
     <div>
-   <nav>
+   <nav class="nav">
       <router-link to="/" class="logo"
         ><span>PomoClock</span>
         </router-link>
-         <ul>
+         <ul class="nav-items">
         <li >
-          <v-btn color="#db524d" @click="dialog=true">
+          <v-btn class="nav-item" color="#db524d" @click="dialog=true">
     <v-icon>mdi-cog-outline</v-icon>
           </v-btn>
+        </li>
+         <li class="nav-item">
+                 Home
+        </li>
+        <li class="nav-item">
+        About
+        </li>
+        <li class="nav-item">
+         Contact
         </li>
       </ul>
     </nav>
@@ -21,7 +30,6 @@ export default {
       dialog:false
     }
   },
-
 }
 </script>
 
@@ -45,10 +53,10 @@ nav {
   color: white;
   margin: 0 0.5rem;
   padding: 0.5rem 1rem;
-  background-color: rgba(255, 255, 255, 0.083);
-  border-radius: 5px;
-  box-shadow: 0 0 5px #000000;
-  transition: all 0.25s;
+  /* background-color: rgba(255, 255, 255, 0.083); */
+  /* border-radius: 5px;
+  box-shadow: 0 0 5px #000000; */
+  /* transition: all 0.25s; */
 }
 
 .nav-item:hover,
@@ -57,7 +65,7 @@ nav {
 }
 
 .nav-link {
-  color: #fff;
+  /* color: #fff; */
   padding: 1rem 1rem;
 }
 
