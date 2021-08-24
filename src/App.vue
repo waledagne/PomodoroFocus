@@ -1,6 +1,5 @@
 <template>
  <v-app>
-   <router-view> </router-view>
    <Nav />
   <v-content>
     <v-container>
@@ -9,9 +8,10 @@
            <Pomo :dialog="dialog" />
         </v-col>
       </v-row>
+          <router-view />
       </v-container>
-   </v-content>
-    <Footer />
+   </v-content>  
+    <Footer /> 
  </v-app>
 </template>
 
