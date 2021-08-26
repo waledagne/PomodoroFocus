@@ -10,7 +10,7 @@
     <v-icon>mdi-cog-outline</v-icon>
           </v-btn>
         </li>
-         <li class="nav-item">
+         <!-- <li class="nav-item">
                  Home
         </li>
         <li class="nav-item">
@@ -18,7 +18,7 @@
         </li>
         <li class="nav-item">
          Contact
-        </li>
+        </li> -->
       </ul>
     </nav>
     </div>

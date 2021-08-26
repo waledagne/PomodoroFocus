@@ -62,28 +62,6 @@
           </li>
         </ol>
       </div>
-
-      <!-- <div class="features container">
-        <h2 class="catchcopy__header">Features</h2>
-        <ul class="features__list">
-          <li>
-            <strong>Responsive design</strong> that works with desktop
-            and mobile
-          </li>
-          <li>
-            <strong>Color transition</strong> to switch moods between
-            work time and rest time
-          </li>
-          <li>
-            <strong>Audio notification</strong> at the end of a timer
-            period
-          </li>
-          <li>
-            <strong>Customizable timer</strong> intervals to suit your
-            preference
-          </li>
-        </ul>
-      </div> -->
     </div>
 </template>
 
