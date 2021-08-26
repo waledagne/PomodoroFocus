@@ -8,9 +8,10 @@
            <Pomo :dialog="dialog" />
         </v-col>
       </v-row>
-          <router-view />
+         
       </v-container>
    </v-content>  
+   <br>
     <Footer /> 
  </v-app>
 </template>

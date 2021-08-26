@@ -43,7 +43,6 @@
           >
         </p>
       </div>
-
       <div class="pomodoro container">
         <h2 class="catchcopy__header">
           How to use the Pomodoro Timer?
@@ -54,11 +53,13 @@
             minutes
           </li>
           <li>
-            <strong>Take a break</strong> for 5 minutes when the alarm
-            ring
+            <strong>Take a break</strong> for 5 minutes
           </li>
           <li>
             <strong>Iterate</strong> 3-5 until you finish the tasks
+          </li>
+          <li>
+            <strong>Take Long break</strong> for 15 minutes 
           </li>
         </ol>
       </div>

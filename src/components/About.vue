@@ -44,4 +44,4 @@ a {
     width: 90%;
   }
 }
-</template>
+</style>
