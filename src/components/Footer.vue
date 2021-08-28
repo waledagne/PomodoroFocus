@@ -13,6 +13,11 @@
         class="social"
         ><v-icon color="#006192">mdi-linkedin</v-icon>
       </a>
+      <a href="https://www.github.com/waledagne"
+         target="_blank"
+         class="social">
+         <v-icon>mdi-github</v-icon>
+       </a>
     </div>
   </v-footer>
 </template>
@@ -39,7 +44,7 @@ footer {
 
 .social {
   font-size: 1.25rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.125rem;
   margin: 0 1rem;
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.63);
