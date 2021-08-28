@@ -1,13 +1,18 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import About from "@/components/About.vue";
-import Contact from '@/components/Contact.vue';
-
+import About from "../components/About.vue";
+import Contact from '../components/Contact.vue';
+import Home from '../components/Pomo.vue';
 
 Vue.use(VueRouter);
 
-export default new VueRouter({
-    routes :[ 
+const routes =[ 
+
+    {
+        path:'/',
+        name:'Home',
+        component:Home
+    },
        {
 
     path: '/about',
@@ -20,8 +25,15 @@ export default new VueRouter({
         name: 'Contact',
         component: Contact
     },
-    ],
-    mode:'history',
 
-})
+    ];
+
+  const router = new VueRouter({
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes,
+});
+
+export default router;
+
 

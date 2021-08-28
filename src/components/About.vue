@@ -21,7 +21,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  background-color: rgba(145, 144, 144, 0.159);
+  background-color: rgba(92, 92, 92, 0.159);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.494);
   transition: all 0.25s;
 }
