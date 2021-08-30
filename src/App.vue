@@ -1,18 +1,23 @@
 <template>
-<div>
  <v-app>
    <Nav />
-  <div>
-    <router-view></router-view>
-  </div>
+  <v-content>
+    <v-container>
+      <v-row>
+        <v-col sm="6" offset-sm="3">
+         <router-view></router-view>
+        </v-col>
+      </v-row>
+         
+      </v-container>
+   </v-content>  
    <br>
     <Footer /> 
  </v-app>
- 
- </div>  
 </template>
 
 <script>
+import Pomo from "./components/Pomo.vue";
 import Nav from "./components/Nav.vue"
 import Footer from "./components/Footer.vue";
 
@@ -21,6 +26,7 @@ export default {
 
 components: {
   Nav,
+  //Pomo,
   Footer,
 },
 data() {
