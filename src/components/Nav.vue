@@ -12,11 +12,13 @@
         </li>
          <!-- <li class="nav-item">
                  Home
-        </li>
+        </li> -->
+        <router-link to="/about">
         <li class="nav-item">
         About
         </li>
-        <li class="nav-item">
+        </router-link>
+        <!-- <li class="nav-item">
          Contact
         </li> -->
       </ul>
@@ -53,10 +55,10 @@ nav {
   color: white;
   margin: 0 0.5rem;
   padding: 0.5rem 1rem;
-  /* background-color: rgba(255, 255, 255, 0.083); */
-  /* border-radius: 5px;
-  box-shadow: 0 0 5px #000000; */
-  /* transition: all 0.25s; */
+  background-color: rgba(255, 255, 255, 0.083); 
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000000; 
+   transition: all 0.25s;
 }
 
 .nav-item:hover,

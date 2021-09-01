@@ -4,11 +4,10 @@
   <v-content>
     <v-container>
       <v-row>
-        <v-col sm="6" offset-sm="3">
+        <v-col sm="8" offset-sm="3">
          <router-view></router-view>
         </v-col>
-      </v-row>
-         
+      </v-row>   
       </v-container>
    </v-content>  
    <br>
@@ -17,7 +16,6 @@
 </template>
 
 <script>
-//import Pomo from "./components/Pomo.vue";
 import Nav from "./components/Nav.vue"
 import Footer from "./components/Footer.vue";
 
@@ -26,7 +24,6 @@ export default {
 
 components: {
   Nav,
-  //Pomo,
   Footer,
 },
 data() {
@@ -38,6 +35,10 @@ data() {
 </script>
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+}
 nav {
   width: 100%;
   height: 60px;
