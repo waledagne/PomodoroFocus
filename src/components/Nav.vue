@@ -13,11 +13,11 @@
          <!-- <li class="nav-item">
                  Home
         </li> -->
-        <router-link to="/about">
+        <!-- <router-link to="/about">
         <li class="nav-item">
         About
         </li>
-        </router-link>
+        </router-link> -->
         <!-- <li class="nav-item">
          Contact
         </li> -->

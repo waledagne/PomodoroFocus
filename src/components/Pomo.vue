@@ -1,6 +1,6 @@
 <template>
 <div>
-          <v-card  class="mt-6">
+          <v-card  class="mt-6 ">
         <v-tabs  @change = "changeTimerTabs" v-model="currentTimer" grow >
             <v-tab  v-for="timer in timers" :key="timer.name">
                 {{ timer.name }}
@@ -131,6 +131,7 @@ export default {
   -webkit-tap-highlight-color: transparent;
 }
  .v-card{
+     
      width:600px;
  }
  .time{
