@@ -36,6 +36,7 @@ data() {
 
 <style>
 body{
+  min-width: 500px;
   margin: 0;
   padding: 0;
  

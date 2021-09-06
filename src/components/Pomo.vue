@@ -12,6 +12,13 @@
           flat>
             <h1 class="time">{{displayMinutes}}:{{displaySeconds}}</h1>
 
+            <!--  alert when the timer finish -->
+         <v-alert v-if="displayMinutes == 0"
+                dense
+                prominent
+                type="success"
+                ></v-alert>
+
         <div class="button-group">
             <v-btn left class="primary" @click="start">
                 <v-icon>mdi-play-circle-outline</v-icon>
