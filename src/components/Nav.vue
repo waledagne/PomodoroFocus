@@ -4,24 +4,26 @@
       <router-link to="/" class="logo"
         ><span>PomoClock</span>
         </router-link>
+       <!--
          <ul class="nav-items">
         <li >
-          <v-btn class="nav-item" color="#db524d" @click="dialog=true">
+           <v-btn class="nav-item" color="#db524d" @click="dialog=true">
     <v-icon>mdi-cog-outline</v-icon>
           </v-btn>
         </li>
-         <!-- <li class="nav-item">
+         <li class="nav-item">
                  Home
-        </li> -->
-        <!-- <router-link to="/about">
+        </li> 
+        <router-link to="/about">
         <li class="nav-item">
         About
         </li>
-        </router-link> -->
-        <!-- <li class="nav-item">
+        </router-link>
+         <li class="nav-item">
          Contact
-        </li> -->
+        </li>
       </ul>
+       --> 
     </nav>
     </div>
 </template>
