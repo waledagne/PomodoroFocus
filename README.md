@@ -1,4 +1,4 @@
-# pomofocus
+# pomofocus helps you to focus on a task 
 
 ## Project setup
 ```
