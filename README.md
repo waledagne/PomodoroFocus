@@ -1,4 +1,8 @@
-# pomofocus helps you to focus on a task 
+# pomofocus
+          Pomofocus is a customizable pomodoro timer that works on
+          desktop & mobile browser. The aim of this app is to help you
+          focus on any task you are working on, such as study,
+          writing, or coding.
 
 ## Project setup
 ```
