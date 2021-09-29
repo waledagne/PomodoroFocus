@@ -1,7 +1,6 @@
 <template>
 <div>
-
-    <v-card  class="mt-8">
+          <v-card  class="mt-6 ">
         <v-tabs  @change = "changeTimerTabs" v-model="currentTimer" grow >
             <v-tab  v-for="timer in timers" :key="timer.name">
                 {{ timer.name }}
@@ -12,6 +11,13 @@
           d-flex flex-column justify-center align-center"
           flat>
             <h1 class="time">{{displayMinutes}}:{{displaySeconds}}</h1>
+
+            <!--  alert when the timer finish -->
+         <v-alert v-if="displayMinutes == 0"
+                dense
+                prominent
+                type="success"
+                ></v-alert>
 
         <div class="button-group">
             <v-btn left class="primary" @click="start">
@@ -68,7 +74,6 @@ export default {
                     name: 'longBreak',
                     minutes:10
                 }
-
                 ],
             isRunning :false,
         }
@@ -133,6 +138,7 @@ export default {
   -webkit-tap-highlight-color: transparent;
 }
  .v-card{
+     
      width:600px;
  }
  .time{
