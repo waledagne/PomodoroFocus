@@ -3,6 +3,7 @@
           desktop & mobile browser. The aim of this app is to help you
           focus on any task you are working on, such as study,
           writing, or coding.
+It is made with vue js framework
 
 ## Project setup
 ```
