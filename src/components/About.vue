@@ -1,13 +1,16 @@
 <template>
    <div class="about">
-    <h1>About <span class="keyword">PomoFocus</span></h1>
+    <h1 class = "text-lg">About <span class="keyword">PomoFocus</span></h1>
     <p>
-      PomoFocus is a simple timer that will help you to focus and do tasks 
-      in short times and take breaks also so you won't be furstrated by a single task 
+      PomoFocus is a simple timer that will help you to focus and do tasks
+      in short times and take breaks also so you won't be furstrated by a single task
     </p>
     <a href="" target="_blank" class="btn"
       >Contact developer</a
     >
+    <div class="w-full flex ">
+
+    </div>
   </div>
 </template>
 
