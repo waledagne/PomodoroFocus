@@ -8,7 +8,11 @@
     <a href="" target="_blank" class="btn"
       >Contact developer</a
     >
-    <div class="w-full flex ">
+    <div class="w-full flex flex-col justify-center items-center shadow-lg">
+      <div>
+        <label for="name" class="text-lg font-semibold">Name</label>
+        <input type="text" class="input" >
+      </div>
 
     </div>
   </div>
