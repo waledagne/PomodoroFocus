@@ -1,6 +1,6 @@
 <template>
    <div class="about">
-    <h1 class = "text-lg">About <span class="keyword text-cyan">PomoFocus</span></h1>
+    <h1 class = "text-lg text-green-200">About <span class="keyword text-cyan">PomoFocus</span></h1>
     <p>
       PomoFocus is a simple timer that will help you to focus and do tasks
       in short times and take breaks also so you won't be furstrated by a single task.
