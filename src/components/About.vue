@@ -1,4 +1,5 @@
 <template>
+<div>
    <div class="about">
     <h1 class = "text-lg text-green-200">About <span class="keyword text-cyan">PomoFocus</span></h1>
     <p>
@@ -6,16 +7,17 @@
       in short times and take breaks also so you won't be furstrated by a single task.
     </p>
     <a href="#" target="_blank" class="btn"
-      >Contact developer</a
-    >
-    <div class="w-full flex flex-col justify-center items-center shadow-lg">
-      <div>
-        <label for="name" class="text-lg font-semibold">Name</label>
-        <input type="text" class="input" >
-      </div>
-
-    </div>
+      >Contact developer</a>
   </div>
+
+<div class="form-control">
+  <label class="label">
+    <span class="label-text">Username</span>
+  </label>
+  <input type="text" placeholder="username" class="input input-bordered">
+</div>
+</div>
+
 </template>
 
 <style scoped>
