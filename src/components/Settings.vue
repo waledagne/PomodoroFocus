@@ -3,7 +3,7 @@
    <v-row justify="center">
     <v-dialog v-model="dialog" persistent max-width="600px">
      <v-card>
-      this is dialog
+  Settings
      </v-card>
         </v-dialog>
    </v-row>
