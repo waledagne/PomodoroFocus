@@ -6,6 +6,7 @@
         </router-link>
 
         <router-link to="/about" class="hover:text-accent" >About</router-link>
+         <router-link to="/about" class="hover:text-accent" >contact</router-link>
        <!--
          <ul class="nav-items">
         <li >
