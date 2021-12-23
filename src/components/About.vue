@@ -9,12 +9,19 @@
     <a href="#" target="_blank" class="btn"
       >Contact developer</a>
   </div>
-
+<div class="flex flex-col shadow-lg bg-white">
 <div class="form-control">
   <label class="label">
-    <span class="label-text">Username</span>
+    <span class="label-text">email</span>
   </label>
   <input type="text" placeholder="username" class="input input-bordered">
+</div>
+<div class="form-control">
+  <label class="label">
+    <span class="label-text">Message</span>
+  </label>
+  <input type="text" placeholder="username" class="input input-bordered">
+</div>
 </div>
 </div>
 
