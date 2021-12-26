@@ -4,7 +4,7 @@
         <h1 class="heroimage__title">
           An online Pomodoro Timer to boost your productivity
         </h1>
-        <!-- <image src="/images/heroimage2.png" class="heroimage__img"></image> -->
+
       </div>
 
       <div class="catchcopy container">
@@ -59,7 +59,7 @@
             <strong>Iterate</strong> 3-5 until you finish the tasks
           </li>
           <li>
-            <strong>Take Long break</strong> for 15 minutes 
+            <strong>Take Long break</strong> for 15 minutes
           </li>
         </ol>
       </div>
