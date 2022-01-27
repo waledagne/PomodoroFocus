@@ -138,8 +138,9 @@ export default {
   -webkit-tap-highlight-color: transparent;
 }
  .v-card{
-     
+
      width:600px;
+     max-width: 100%;
  }
  .time{
      text-align: center;
