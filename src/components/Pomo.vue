@@ -124,7 +124,17 @@ export default {
             this.currentTimer = num
             this.reset(this.timers[num].minutes)
 
-        }
+        },
+        // metods for the settings
+        settings(){
+            this.dialog = true
+        },
+
+        // method for changing the timer
+        changeTimer(num){
+            this.timerType = num
+            this.reset(this.timers[num].minutes)
+        },
     }
 }
 </script>
